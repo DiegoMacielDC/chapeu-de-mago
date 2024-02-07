@@ -74,16 +74,16 @@ nav > a:hover{
 }
 
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    line-height: 1em;
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 1.5vw;
 }
 
 section > p{
-    padding-bottom: 2em;
+    padding-bottom: 3px;
 }
 
 section.normal{
@@ -97,11 +97,13 @@ section.imagem{
     box-shadow: inset 6px 6px 13px 0px black;
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 section.imagem > p{
     display: inline-block;
-    padding: 5px;
+    padding: 2px;
     background-color: rgba(0, 0, 0, 0.397);
 }
 
