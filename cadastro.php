@@ -1,0 +1,1 @@
+Em breve teremos as funcionalidades do cadastro e e-mail oficiais
