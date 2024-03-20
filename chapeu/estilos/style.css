@@ -36,8 +36,8 @@ header{
 }
 
 img{
-    min-width: 200px;
-    min-height: 200px;
+    max-width: 25vw;
+    max-height: 25vh;
 }
 
 header a, footer a{
