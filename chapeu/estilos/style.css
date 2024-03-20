@@ -35,6 +35,11 @@ header{
     padding-top: 0px;
 }
 
+img{
+    max-width: 20vw;
+    max-height: 20vw;
+}
+
 header a, footer a{
     color: white;
     text-decoration: none;
@@ -52,7 +57,7 @@ i#burguer{
     transition-duration: .5s;
     text-align: center;
     display: block;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -65,7 +70,7 @@ i#burguer:hover{
 menu{
     display: none;
     background-color:var(--cor5);
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0px 7px 7px rgb(0, 0, 0, 0, 0.200)
 }
 
@@ -75,7 +80,7 @@ menu > ul{
 
 menu > ul > li > a{
     display: block;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     text-align: center;
     background-color: var(5);
@@ -92,10 +97,10 @@ menu > ul > li > a:hover{
 }
 
 main{
-    width: 90vw;
+    width:90vw;
     background-color: white;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 10px;
     border-radius: 10px;
 }
