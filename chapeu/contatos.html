@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="shortcut icon" href="imagens/chapeu.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/chapeu sem fundo.png" alt="banner Chapéu de Mago">
+
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html" target="_self" rel="prev">Home</a></li>
+                <li><a href="quemsomos.html" target="_self" rel="next">Quem Somos</a></li>
+                <li><a href="galeria.html" target="_self" rel="next">Galeria</a></li>
+                <li><a href="contatos.html" target="_self" rel="next">Contatos</a></li>
+            </ul>
+        </menu>
+    </header>
+<main>
+    <section class="normal">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Dados para Contato</legend>
+                <p>
+                    <label for="inome">Nome : </label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="50" placeholder="Nome completo" autocomplete="name">
+                </p>
+
+                <p>
+                    <label for="iapelido">Apelido ou NickName : </label>
+                <input type="text" name="apelido" id="iapelido" minlength="2" maxlength="50" placeholder="Digite seu Apelido ou NickName" autocomplete="apelido" size="30">
+                </p>
+
+                <p>
+                    <label for="iemail">E-mail :</label>
+                    <input type="email" name="email" id="iemail" required placeholder="emailparaconto@email.com.br" maxlength="30" size="30">
+                </p>
+                
+                <p>
+                    <label for="itel">Telefone para contato :</label>
+                    <input type="tel" name="tel" id="itel" minlength="8" maxlength="11" size="11" placeholder="DDDnumero">
+                </p>
+
+                <p>
+                    <label for="imsg">Assunto :</label><br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" maxlength="500" aria-setsize="100" placeholder="O assunto deve ter no máximo 500 caracteres" required></textarea>
+                    <!--<input type="text" name="texto" id="itexto" required maxlength="300" placeholder="O assunto deve ter no maximo 300 caracteres" max="300" size="50">-->
+                </p>
+
+                <p>
+                    <label for="inotificacao">Deseja receber notificações e atualizações da Chapeu:</label><br>
+                    <input type="radio" name="noticacao" id="isim" value="sim" checked> <label for="isim">Sim</label>
+                    <input type="radio" name="noticacao" id="inao" value="nao"> <label for="inao">Não</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="imagem" id="img01">
+        <p>
+            vai conter todas as informações de contato caso tenha telefones de contato.
+            vai contertodas as redes sociais que possa entrar em contato.
+        </p>
+    </section>
+
+    <section class="normal">
+        <p>
+            vai conter mapa com endereço dos encontros e datas (contato pessoalmente)
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.853443729817!2d-56.12541512411523!3d-15.652790819485723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939dad415de313b7%3A0x5428b470a86359be!2sV%C3%A1rzea%20Grande%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1707267314957!5m2!1spt-BR!2sbr" width="450" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+</main>
+
+    <script>
+        function mudouTamanho(){
+            if (windowinnerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+    <footer>
+        <p>Site criado:<a href="https/://https://DiegoMacielDC.github.io" target="_blank">Diego Maciel</a> e <a href="#Itsolucoes" target="_blank">It Soluções</a> para Chapéu de Mago</p>
+        <p>Contatos:</p>
+        <p>endereço:</p>
+    </footer>
+</body>
+</html>
