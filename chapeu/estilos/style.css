@@ -109,7 +109,7 @@ section{
     padding-top: 3vh;
     padding-bottom: 3vh;
     line-height: 1em;
-    padding-left: 10px;
+    padding-left: 1px;
     font-family: var(--fonte3);
     font-size: 2vw;
 }
