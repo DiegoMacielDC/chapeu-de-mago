@@ -109,7 +109,7 @@ section{
     padding-top: 3vh;
     padding-bottom: 3vh;
     line-height: 1em;
-    padding-left: 1px;
+    padding-left: 5px;
     font-family: var(--fonte3);
     font-size: 2vw;
 }
@@ -144,6 +144,11 @@ section#img01{
     background-image: url(../imagens/chapeu-medio.png);
     background-position: right center;
     
+}
+
+iframe{
+    width: 350;
+    height: 280;
 }
 
 footer{
