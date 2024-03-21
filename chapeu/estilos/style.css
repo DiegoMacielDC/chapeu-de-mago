@@ -109,7 +109,7 @@ section{
     padding-top: 3vh;
     padding-bottom: 3vh;
     line-height: 1em;
-    padding-left: 30px;
+    padding-left: 10px;
     font-family: var(--fonte3);
     font-size: 2vw;
 }
@@ -121,6 +121,7 @@ section > p{
 section.normal{
     background-color: white;
     color: rgb(0, 0, 0);
+    background-size: cover;
 }
 
 section.imagem{
